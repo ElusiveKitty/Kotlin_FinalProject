@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="?colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/work_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work Duration"
+        android:textColor="?colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_title" />
+
+    <TextView
+        android:id="@+id/work_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 min"
+        android:textColor="?colorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/work_label" />
+
+    <SeekBar
+        android:id="@+id/work_seek_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="55"
+        android:progress="20"
+        android:progressTint="?colorPrimary"
+        android:thumbTint="?colorPrimary"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/work_label" />
+
+    <TextView
+        android:id="@+id/break_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break Duration"
+        android:textColor="?colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/work_seek_bar" />
+
+    <TextView
+        android:id="@+id/break_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 min"
+        android:textColor="?colorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/break_label" />
+
+    <SeekBar
+        android:id="@+id/break_seek_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="29"
+        android:progress="4"
+        android:progressTint="?colorPrimary"
+        android:thumbTint="?colorPrimary"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/break_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Student_Pomodoro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ink_white</item>
+        <item name="colorPrimaryVariant">@color/ink_tertiary</item>
+        <item name="colorOnPrimary">@color/ink_black</item>
+        <item name="colorSecondary">@color/ink_tertiary</item>
+        <item name="colorSecondaryVariant">@color/ink_disabled</item>
+        <item name="colorOnSecondary">@color/ink_black</item>
+        <item name="colorTertiary">@color/ink_tertiary</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">#121212</item>
+    </style>
+</resources>
